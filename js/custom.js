@@ -136,6 +136,23 @@ return [];
 
 /* Smooth Scroll End */
 
+/* Go To Top Smoothly Start */
+	var offset = 220;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.gototop').fadeIn(duration);
+		} else {
+			jQuery('.gototop').fadeOut(duration);
+		}
+	});
+
+	jQuery('.gototop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+/* Go To Top Smoothly End */
 
 
 });
