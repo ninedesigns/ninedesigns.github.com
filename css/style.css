@@ -78,9 +78,6 @@ table { border-collapse:collapse; }
 /* main wrapper */
 #wrapper { width:100%; height:auto; word-wrap:break-word; }
 
-.gototop { text-decoration: none; position: fixed; bottom: 2em; right: 2em; color: #ffffff; background-color: #323746; font-size: 12px; padding: 1em; display: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
-.gototop:hover { background-color: rgba(135, 135, 135, 0.80); }
-
 .header { width:98%; float:left; background:#ffffff; border-bottom:2px solid #231f20; padding:15px 1%; }
 .header #logo { width:450px; height:90px; float:left; }
 .header #logo a { width:300px; height:92px; float:left; display:block; background:url(../images/nd_logo.png) no-repeat 0 0; background-size:100%; text-indent:-999em; transition:all 0.8s; -webkit-transition:all 0.8s; -moz-transition:all 0.8s; -o-transition:all 0.8s; }
@@ -111,20 +108,20 @@ table { border-collapse:collapse; }
 .mobilemenu { display:none; }
 
 .content { width:100%; float:left; }
-#theman { width:96%; float:left; min-height:100px; background:url(../images/bg_man.jpg) repeat 0 0; padding:50px 2%; }
-#theman .left { width:34%; float:left; }
-#theman .left .img_box {  width:100%; float:left; text-align:center; margin:0 0 20px 0; }
-#theman .left .img_box img { max-width:395px; width:100%; float:none; }
-#theman .left .signature { width:100%; float:left; text-align:center; }
-#theman .left .signature img { max-width:294px; width:100%; float:none; }
-#theman .right { width:64%; float:right; }
-#theman .right .main_title { width:100%; float:left; font-size:50px; line-height:65px; color:#231f20; margin:40px 0 30px 0; }
-#theman .right .main_title span { font-family:'open_sansbold'; color:#1b548f; }
-#theman .right p { width:100%; float:left; text-align:justify; font-size:30px; color:#231f20; line-height:140%;  overflow:hidden; height:130px; }
-#theman .btn_learnabtme { margin:20px 0; float:left; padding:30px 40px; color:#ffffff; font-size:26px; font-weight:bold; background:#1b548f; text-decoration:none; }
-#theman .btn_learnabtme:hover { background:#0c3d70; }
+#theman_area { width:96%; float:left; min-height:100px; background:url(../images/bg_man.jpg) repeat 0 0; padding:50px 2%; }
+#theman_area .left { width:34%; float:left; }
+#theman_area .left .img_box {  width:100%; float:left; text-align:center; margin:0 0 20px 0; }
+#theman_area .left .img_box img { max-width:395px; width:100%; float:none; }
+#theman_area .left .signature { width:100%; float:left; text-align:center; }
+#theman_area .left .signature img { max-width:294px; width:100%; float:none; }
+#theman_area .right { width:64%; float:right; }
+#theman_area .right .main_title { width:100%; float:left; font-size:50px; line-height:65px; color:#231f20; margin:40px 0 30px 0; }
+#theman_area .right .main_title span { font-family:'open_sansbold'; color:#1b548f; }
+#theman_area .right p { width:100%; float:left; text-align:justify; font-size:30px; color:#231f20; line-height:140%;  overflow:hidden; height:130px; }
+#theman_area .btn_learnabtme { margin:20px 0; float:left; padding:30px 40px; color:#ffffff; font-size:26px; font-weight:bold; background:#1b548f; text-decoration:none; }
+#theman_area .btn_learnabtme:hover { background:#0c3d70; }
 
-#skill { width:100%; float:left; min-height:500px; background:url(../images/bg_skill.jpg) repeat 0 0; }
+#skill_area { width:100%; float:left; min-height:500px; background:url(../images/bg_skill.jpg) repeat 0 0; }
 .skillarea .main_title { width:100%; float:left; }
 .skillarea .main_title h2 { width:100%; float:left; font-size:50px; color:#ffffff; text-align:center; margin:40px 0; }
 .skillarea .list { width:100%; float:left; }
@@ -132,7 +129,7 @@ table { border-collapse:collapse; }
 .skillarea .list ul li { width:20%; float:left; text-align:center; margin:30px 0; }
 .skillarea .list ul li img { width:80%; max-width:200px;  }
 
-#portfolio { width:100%; float:left; min-height:500px; background:url(../images/bg_portfolio.jpg) repeat 0 0; padding:0 0 117px 0; }
+#portfolio_area { width:100%; float:left; min-height:500px; background:url(../images/bg_portfolio.jpg) repeat 0 0; padding:0 0 117px 0; }
 .portfolioarea .main_title { width:100%; float:left; }
 .portfolioarea .main_title h2 { width:100%; float:left; font-size:50px; line-height:100%; color:#231f20; text-align:center; margin:40px 0 10px 0; }
 .portfolioarea .main_title h3 { width:100%; float:left; font-size:30px; line-height:100%; color:#727272; text-align:center; margin:10px 0; }
@@ -180,8 +177,8 @@ table { border-collapse:collapse; }
 
 .header .menu { top:0; }
 
-#theman .right .main_title { font-size:42px; line-height:42px; margin:20px 0; }
-#theman .right p { font-size:26px; line-height:140%; height:150px; }
+#theman_area .right .main_title { font-size:42px; line-height:42px; margin:20px 0; }
+#theman_area .right p { font-size:26px; line-height:140%; height:150px; }
 
 .skillarea .list ul li { width:25%; }
 }
@@ -190,17 +187,17 @@ table { border-collapse:collapse; }
 .header #logo { width:100%; height:80px; }
 .header #logo a { width:260px; height:80px; }
 
-#theman .right .main_title { font-size:34px; line-height:34px; }
+#theman_area .right .main_title { font-size:34px; line-height:34px; }
 .portfolioarea .box { width:21%; float:left; margin:0 2% 10px 2%; }
 }
 
 @media screen and (max-width: 650px) {
-#theman .left { width:35%; }
-#theman .right { width:64%; }
-#theman .right .main_title { font-size:24px; line-height:24px; }
-#theman .right p { font-size:20px; line-height:24px; height:100px }
+#theman_area .left { width:35%; }
+#theman_area .right { width:64%; }
+#theman_area .right .main_title { font-size:24px; line-height:24px; }
+#theman_area .right p { font-size:20px; line-height:24px; height:100px }
 
-#theman .btn_learnabtme { font-size:18px; padding:20px 26px; }
+#theman_area .btn_learnabtme { font-size:18px; padding:20px 26px; }
 
 .skillarea .list ul li { width:33%; }
 
@@ -215,8 +212,8 @@ table { border-collapse:collapse; }
 .menu { display:none; }
 
 
-#theman .left { width:100%; float:left; margin:0 0 10px 0; }
-#theman .right { width:100%;float:left; }
+#theman_area .left { width:100%; float:left; margin:0 0 10px 0; }
+#theman_area .right { width:100%;float:left; }
 
 .skillarea .main_title h2 { font-size:24px; margin:20px 0; }
 .skillarea .list ul li { width:50%; }
