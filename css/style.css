@@ -122,8 +122,8 @@ table { border-collapse:collapse; }
 #theman_area .right .main_title { width:100%; float:left; font-size:50px; line-height:65px; color:#231f20; margin:40px 0 30px 0; }
 #theman_area .right .main_title span { font-family:'open_sansbold'; color:#1b548f; }
 #theman_area .right p { width:100%; float:left; text-align:justify; font-size:30px; color:#231f20; line-height:140%;  overflow:hidden; height:130px; }
-#theman_area .btn_learnabtme { margin:20px 0; float:left; padding:30px 40px; color:#ffffff; font-size:26px; font-weight:bold; background:#1b548f; text-decoration:none; }
-#theman_area .btn_learnabtme:hover { background:#0c3d70; }
+#theman_area .btn_learnabtme { margin:20px 0; transition: background-color 0.5s ease; float:left; padding:30px 40px; color:#ffffff; font-size:26px; font-weight:bold; background:#1b548f; text-decoration:none; }
+#theman_area .btn_learnabtme:hover { background:#fff; /*0c3d70*/ }
 
 #skill_area { width:100%; float:left; min-height:500px; background:url(../images/bg_skill.jpg) repeat 0 0; }
 .skillarea .main_title { width:100%; float:left; }
@@ -222,3 +222,5 @@ table { border-collapse:collapse; }
 .footer .footer_content .content .hello { font-size:20px; } 
 
 }
+
+
