@@ -10,6 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'open_sansbold';
     src: url('../fonts/opensans-bold-webfont.eot');
@@ -129,8 +130,8 @@ table { border-collapse:collapse; }
 .skillarea .main_title { width:100%; float:left; }
 .skillarea .main_title h2 { width:100%; float:left; font-size:50px; line-height:100%; color:#ffffff; text-align:center; margin:20px 0 10px 0; }
 .skillarea .list { width:100%; float:left; }
-.skillarea .list ul { width:100%; float:left; }
-.skillarea .list ul li { width:20%; float:left; text-align:center; margin:20px 0; }
+.skillarea .list ul { width:100%; float:left; text-align:center; padding:0 !important; margin:0 !important; }
+.skillarea .list ul li { width:23%; text-align:center; margin:30px 0 !important; display:inline-block; padding:0 !important; }
 .skillarea .list ul li img { width:80%; max-width:200px;  }
 
 #portfolio_area { width:100%; float:left; min-height:500px; background:url(../images/bg_portfolio.jpg) repeat 0 0; padding:0 0 117px 0; }
